@@ -14,72 +14,71 @@
             <div class="button-cont">
                 <button class="button" style="grid-area: box-c" onclick="
                 currentDisplay = ''; 
-                document.querySelector('#display').value = currentDisplay;
+                display();
                 ">C</button>
                 <button class="button" style="grid-area: box-1" onclick="
-                currentDisplay = currentDisplay + '1'; 
-                document.querySelector('#display').value = currentDisplay;
+                button_click('1'); 
+                display();
                 ">1</button>
                 <button class="button" style="grid-area: box-2" onclick="
-                currentDisplay = currentDisplay + '2'; 
-                document.querySelector('#display').value = currentDisplay;
+                button_click('2'); 
+                display();
                 ">2</button>
                 <button class="button" style="grid-area: box-3" onclick="
-                currentDisplay = currentDisplay + '3'; 
-                document.querySelector('#display').value = currentDisplay;
+                button_click('3'); 
+                display();
                 ">3</button>
                 <button class="button" style="grid-area: box-4" onclick="
-                currentDisplay = currentDisplay + '4'; 
-                document.querySelector('#display').value = currentDisplay;
+                button_click('4'); 
+                display();
                 ">4</button>
                 <button class="button" style="grid-area: box-5" onclick="
-                currentDisplay = currentDisplay + '5'; 
-                document.querySelector('#display').value = currentDisplay;
+                button_click('5'); 
+                display();
                 ">5</button>
                 <button class="button" style="grid-area: box-6" onclick="
-                currentDisplay = currentDisplay + '6'; 
-                document.querySelector('#display').value = currentDisplay;
+                button_click('6'); 
+                display();
                 ">6</button>
                 <button class="button" style="grid-area: box-7" onclick="
-                currentDisplay = currentDisplay + '7'; 
-                document.querySelector('#display').value = currentDisplay;
+                button_click('7'); 
+                display();
                 ">7</button>
                 <button class="button" style="grid-area: box-8" onclick="
-                currentDisplay = currentDisplay + '8'; 
-                document.querySelector('#display').value = currentDisplay;
+                button_click('8');
+                display();
                 ">8</button>
                 <button class="button" style="grid-area: box-9" onclick="
-                currentDisplay = currentDisplay + '9'; 
-                document.querySelector('#display').value = currentDisplay;
+                button_click('9');
+                display();
                 ">9</button>
                 <button class="button" style="grid-area: box-0" onclick="
-                currentDisplay = currentDisplay + '0'; 
-                document.querySelector('#display').value = currentDisplay;
+                button_click('0');
+                display();
                 ">0</button>
                 <button class="button" style="grid-area: box-p" onclick="
-                currentDisplay = currentDisplay + '+'; 
-                document.querySelector('#display').value = currentDisplay;
+                button_click('+');
+                display();
                 ">+</button>
                 <button class="button" style="grid-area: box-ms" onclick="
-                currentDisplay = currentDisplay + '-'; 
-                document.querySelector('#display').value = currentDisplay;
+                button_click('-'); 
+                display();
                 ">-</button>
                 <button class="button" style="grid-area: box-ml" onclick="
-                currentDisplay = currentDisplay + '*'; 
-                document.querySelector('#display').value = currentDisplay;
+                button_click('*');
+                display();
                 ">*</button>
                 <button class="button" style="grid-area: box-div" onclick="
-                currentDisplay = currentDisplay + '/'; 
-                document.querySelector('#display').value = currentDisplay;
+                button_click('/');
+                display();
                 ">/</button>
                 <button class="button" style="grid-area: box-eq" onclick="
-                let result = eval(currentDisplay);
-                currentDisplay = result; 
-                document.querySelector('#display').value = currentDisplay;
+                currentDisplay = eval(currentDisplay);
+                display();
                 ">=</button>
                 <button class="button" style="grid-area: box-dot" onclick="
-                currentDisplay = currentDisplay + '.'; 
-                document.querySelector('#display').value = currentDisplay;
+                button_click('.');
+                display();
                 ">.</button>
             </div>
         </div>
